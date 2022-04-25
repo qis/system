@@ -1,0 +1,3 @@
+[submodule "windows/sophia"]
+	path = windows/sophia
+	url = https://github.com/farag2/Sophia-Script-for-Windows
