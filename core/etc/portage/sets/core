@@ -1,0 +1,65 @@
+# Bootloader
+sys-apps/busybox
+sys-kernel/bliss-initramfs
+
+# Compression
+app-arch/p7zip
+app-arch/xz-utils
+
+# Development
+dev-db/sqlite
+dev-lang/nasm
+dev-lang/perl
+dev-lang/python
+dev-lang/yasm
+dev-python/pip
+dev-util/cmake
+dev-util/ninja
+dev-util/patchelf
+dev-vcs/git
+
+# Editor
+app-editors/neovim
+dev-libs/tree-sitter
+dev-python/pynvim
+net-libs/nodejs
+sys-apps/fd
+sys-apps/ripgrep
+
+# Filesystem
+sys-block/parted
+sys-fs/dosfstools
+sys-fs/e2fsprogs
+sys-fs/zfs
+
+# Hardware
+sys-apps/bolt
+sys-apps/hwinfo
+sys-apps/lm-sensors
+sys-apps/lshw
+sys-apps/pciutils
+sys-apps/usbutils
+sys-process/lsof
+
+# System
+app-admin/sudo
+app-misc/c_rehash
+app-shells/bash-completion
+net-misc/dhcpcd
+net-misc/openssh
+sys-apps/moreutils
+sys-auth/polkit
+sys-auth/seatd
+
+# Tools
+app-admin/ccze
+app-misc/jq
+app-misc/symlinks
+app-misc/tmux
+app-misc/wipe
+app-portage/gentoolkit
+app-portage/pfl
+app-text/tree
+sys-apps/pv
+sys-process/htop
+sys-process/time

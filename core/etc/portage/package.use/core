@@ -1,0 +1,22 @@
+# Compression
+app-arch/p7zip rar
+sys-libs/zlib minizip
+
+# Development
+dev-db/sqlite readline secure-delete tools
+dev-lang/perl ithreads
+
+# Filesystem
+sys-fs/zfs pam rootfs
+
+# Hardware
+sys-process/lsof rpc
+
+# System
+dev-libs/glib mime
+sys-apps/moreutils -perl
+sys-apps/systemd boot kernel-install
+sys-auth/seatd builtin server
+
+# Wireless
+net-wireless/wpa_supplicant ap fasteap tkip wep wps
