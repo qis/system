@@ -39,5 +39,20 @@ Switch the system clock from local time to UTC.
 "RealTimeIsUniversal"=dword:00000001
 ```
 
+Disable automatic driver application installation.
+
+```
+Start > "Change device installation settings"
+◉ No (your device might not work as expected)
+```
+
+Uninstall unwanted apps and reboot the system.
+
+Connect to the internet and install Windows updates.
+
+Go to <https://aka.ms/PSWindows> and install PowerShell version 7.
+
+Use <https://github.com/farag2/Sophia-Script-for-Windows> to configure the system.
+
 [win]: https://www.microsoft.com/en-us/software-download/windows11
 [ruf]: https://rufus.ie/en/
