@@ -229,11 +229,11 @@ bootctl install
 
 # Configure systemd bootloader.
 tee /boot/loader/loader.conf >/dev/null <<'EOF'
-default linux
-timeout menu-hidden
+timeout 3
+default @saved
 console-mode keep
 auto-firmware false
-auto-entries false
+auto-entries true
 editor false
 beep false
 EOF
@@ -249,6 +249,19 @@ EOF
 # Set default systemd bootloader entry.
 bootctl list
 bootctl set-default linux.conf
+
+# Install efibootmgr(8) after disabling "Boot Order Lock" in UEFI settings.
+emerge -avn sys-boot/efibootmgr
+
+# List boot entries.
+efibootmgr
+
+# Delete boot entries.
+# efibootmgr -B -b 0
+# efibootmgr -B -b 1
+
+# Create boot entry.
+efibootmgr -c -d /dev/nvme0n1 -p 1 -L "Linux Boot Manager" -l '\EFI\systemd\systemd-bootx64.efi'
 
 # Configure virtual memory.
 mkdir /etc/sysctl.d
